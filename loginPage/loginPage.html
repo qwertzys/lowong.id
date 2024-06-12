@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- LIbrary for getting icons Boxicons -->
+    <script defer src="./loginScript.js"></script>
+</head>
+<body style="background: green">
+    <div class="wrapper">
+        <!-- Login Form -->
+         <!-- Insert Logo here -->
+          
+         <form action="" autocomplete="off">
+            <!-- LoginLabel -->
+             <h1>Login</h1>
+             <!-- Username/Email -->
+             <div class="input-box">
+                <input type="text" placeholder="Email" id="email">
+                <i class='bx bxs-user'></i> <!-- User Icon -->
+              </div>
+              <!-- Password -->
+              <div class="input-box">
+                <input type="password" placeholder="Password" id="password">
+                <i class='bx bxs-lock-alt' ></i> <!-- Password Icon -->
+              </div>
+              <!-- Register Link -->
+               <div class="register-link">
+                <a href="/lowong.id/registrationPage/registrationPage.html">Don't have an account? Register here</a> <!-- Add underline text when hovered -->
+               </div>
+               <!-- Submit Button -->
+                <button type="button" class="butn" onclick="checkInputs()">Login</button>
+            </form>
+    </div>
+    
+</body>
+</html>
