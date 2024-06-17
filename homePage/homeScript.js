@@ -7,3 +7,7 @@ function showSideBar(){
 function hideSideBar(){
     sidebar.classList.remove('open');
 }
+
+function navigateToSearch(){
+    window.location.href = "../searchPage/searchPage.html"
+}

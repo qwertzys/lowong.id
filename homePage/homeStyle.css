@@ -40,10 +40,6 @@ nav a {
     color: white;
 }
 
-nav a:hover {
-    background-color: rgb(3, 177, 76);
-}
-
 /* Menu */
 nav li:first-child {
     margin-right: auto;
@@ -82,6 +78,67 @@ nav li:last-child {
     width: 190px;
 }
 
+.sidebar a:hover {
+    background-color: rgb(3, 177, 76);
+}
+
 svg {
     padding-right: 10%;
 }
+
+/* Header */
+header {
+    font-family: "Fredoka", serif;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/homebackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 37%;
+    top: 75px;
+    height: 50vh;
+}
+
+header H1{
+    color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+main {
+    font-family: "Fredoka", serif;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main H1{
+    padding-top: 40px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.browseBtn{
+    outline: none;
+    padding: 25px 100px;
+    background-color:rgba(1, 62, 1, 0.9);
+    color: white;
+    cursor: pointer;
+
+    font-size: 50px;
+    font-family: "Fredoka", serif; 
+    border: none;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.browseBtn:hover {
+    background-color: rgb(3, 177, 76);
+    transform: scale(1.05);
+}
+
