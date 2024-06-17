@@ -1,0 +1,9 @@
+body {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    background-image: url(../images/greenbackground.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

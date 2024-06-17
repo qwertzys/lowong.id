@@ -4,8 +4,8 @@ var password = document.getElementById("password")
 function checkInputs(){
     if (email.value == ''){
         alert("Email must be filled!");
-    } else if (!email.contains('@gmail.com')){
-        alert("Email must contain '@gmail.com'");
+    } else if (!email.value.endsWith('@gmail.com') && !email.value.endsWith('@binus.ac.id')){
+        alert("Email must contain email address!");
     } else if (password.value == ''){
         alert("Password must be filled!");
     } else {

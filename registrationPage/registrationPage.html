@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="registrationStyle.css"> <!-- Main CSS -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Library for getting icons Boxicons -->
     <script defer src="./registrationScript.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Library for getting icons Boxicons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/intlTelInput.css">
 </head>
 <body>
@@ -20,19 +24,19 @@
             <input type="text" placeholder="Last Name" id="lastname">
         </div>
           <!-- Birth Date -->
-        <label for="">Birth Date</label>
+        <label for="birthdate">Birth Date</label>
         <div>
             <input type="date" placeholder="dd/mm/yyyy" id="birthdate">
         </div>
         <!-- Email -->
-        <label for="">Email</label>
+        <label for="email">Email</label>
         <div>
             <input type="email" placeholder="email@gmail.com" id="email">
         </div>
             <!-- Phone Number -->
             <label>Phone Number</label>
         <div>
-            <input type="tel" placeholder="xxx-xxx-xxxx" id="phone" required>
+            <input type="tel" placeholder="xxx-xxx-xxxx" id="phone">
         </div>
         <!-- Password -->
          <label for="">Password</label>

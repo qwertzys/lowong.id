@@ -22,15 +22,17 @@ function checkInputs(){
         alert("Birth date must be filled!");
     } else if (email.value == ''){
         alert("Email must be filled!");
-    } else if (!email.contains('@gmail.com')){
-        alert("Email must contian '@gmail.com'!");
+    } else if (!email.value.endsWith('@gmail.com') && !email.value.endsWith('@binus.ac.id')){
+        alert("Email must contain email address!");
     } else if (phone.value == ''){
         alert("Phone number must be filled!");
+    } else if (phone.value.length != 10) {
+        alert("Phone number must be 10 digits long")
     } else if (password.value == ''){
-        alert("Last name must be filled!");
+        alert("Password must be filled!");
     } else if (confirmpassword.value == ''){
         alert("Last name must be filled!");
-    } else if (confirmpassword.value != password){
+    } else if (confirmpassword.value != password.value){
         alert("Confirm password is not the same as the password!");
     } else if (country.value == ''){
         alert("Country must be filled!");

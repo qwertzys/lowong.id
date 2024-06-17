@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    min-height: 100vh;
+    background-image: url(../images/greenbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    background-color: rgba(1, 62, 1, 0.9);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: rgb(3, 177, 76);
+}
+
+/* Menu */
+nav li:first-child {
+    margin-right: auto;
+}
+
+/* Logout */
+nav li:last-child {
+    margin-top: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    width: 250px;
+    z-index: 10;
+    background-color: rgba(1, 62, 1, 0.9);
+    box-shadow: -10px, 0, 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: left 0.75s ease, visibility 0s 0.75s, opacity 0.75s ease;
+}
+
+.sidebar.open {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: left 0.75s ease, visibility 0s, opacity 0.75s ease;
+}
+
+.sidebar a{
+    width: 190px;
+}
+
+svg {
+    padding-right: 10%;
+}
