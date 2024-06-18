@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="css/intlTelInput.css">
 </head>
 <body>
-    <form action="" autocomplete="off">
+    <div class="wrapper">
+        <form action="" autocomplete="off">
         <!-- Registration -->
-        <h1>Registration</h1>
+        <h1 id="registrationH1">Registration</h1>
          <!-- First and Last Name -->
          <label for="">Full Name</label>
         <div class="input-box">
@@ -25,27 +26,27 @@
         </div>
           <!-- Birth Date -->
         <label for="birthdate">Birth Date</label>
-        <div>
+        <div class="input-box">
             <input type="date" placeholder="dd/mm/yyyy" id="birthdate">
         </div>
         <!-- Email -->
         <label for="email">Email</label>
-        <div>
+        <div class="input-box">
             <input type="email" placeholder="email@gmail.com" id="email">
         </div>
             <!-- Phone Number -->
             <label>Phone Number</label>
-        <div>
+        <div class="input-box">
             <input type="tel" placeholder="xxx-xxx-xxxx" id="phone">
         </div>
         <!-- Password -->
          <label for="">Password</label>
-        <div>
+        <div class="input-box">
             <input type="password" placeholder="Password" id="password">
             <input type="password" placeholder="Confirm Password" id="confirmpassword">
         </div>
         <label for="country">Country/State</label>
-         <div>
+         <div class="input-box">
             <select name="" id="country">
                 <option value="">-- Select Country --</option>
             </select>
@@ -63,7 +64,7 @@
             </select>
          </div>
          <label for="address">Address</label>
-         <div>
+         <div class="input-box">
             <input type="text" placeholder="Address" id="address">
          </div>
                   <!-- Register Button -->
@@ -77,6 +78,6 @@
     </script>
 
     <script src="dropDownScript.js"></script>
-
+</div>
 </body>
 </html>
