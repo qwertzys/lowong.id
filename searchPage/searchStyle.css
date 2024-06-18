@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -92,9 +93,9 @@ svg {
 .wrapper {
     margin-top: 50px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -102,7 +103,7 @@ svg {
 }
 
 #search-container {
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -111,6 +112,17 @@ svg {
     padding-right: 70px;
     z-index: 1;
 }
+button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+  }
 
 #search-input {
     padding: 15px 15px;
@@ -138,7 +150,6 @@ svg {
     position: absolute;
     background: none;
     border: none;
-    cursor: pointer;
     padding: 0;
     z-index: 1;
 }
@@ -148,10 +159,64 @@ svg {
     height: 24px;
     fill: #007bff;
     position: relative;
-    right: 58.5vh;
-    top: 0.5mm;
+    right: 58vh;
+    top: 0.4mm;
 }
 
 #searchBtn:hover svg {
     fill: #0056b3;
+}
+
+/* Filter */
+
+.button-value {
+    border: 2px solid rgba(1, 62, 1, 0.9);;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: rgba(1, 62, 1, 0.9);
+    color: white;
+    cursor: pointer;
+    margin-top: 120px;
+}
+
+.active {
+    background-color: rgb(3, 177, 76);
+}
+
+#products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+    flex-direction: column;
+    position: absolute;
+}
+
+.card {
+    background-color: rgb(3, 177, 76);
+    max-width: 20em;
+    margin-top: 10em;
+    padding: 5em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+    padding-right: 5em;
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+.hide {
+    display: none;
 }
