@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./searchStyle.css">
-    <script defer src="./searchScript.js"></script>
-
+    <link rel="stylesheet" href="./jobStyle.css">
+    <script defer src="./jobScript.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- LIbrary for getting icons Boxicons -->
-    <title>Browse Jobs</title>
+    <title>Home Page</title>
 </head>
 <body>
+   <!-- NavBar -->
     <nav>
         <ul class="sidebar">
             <li onclick="hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="3 -1 24 20" style="fill: rgba(255, 255, 255, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg></a></li>
@@ -29,23 +29,30 @@
             <li><a href="#">Profile</a></li>
         </ul>
     </nav>
-
-    <div class="wrapper">
-        <div id="search-container">
-            <button id="searchBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(107, 107, 107, 1);"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
-            </button>
-            <input type="search" id="search-input" placeholder="Search jobs here...">
-            <button id="search" onclick="">Search</button>
+    <!-- Job -->
+     <div class="job-card">
+        <h2>Accounting</h2>
+        <p>Rating: 4.5 </p>
+        <svg onclick="navigateToMessage()" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M5 2c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3.586L12 21.414 15.414 18H19c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2H5zm14 14h-4.414L12 18.586 9.414 16H5V4h14v12z"></path><path d="M7 7h10v2H7zm0 4h7v2H7z"></path></svg>
+        <div class="job-desc">
+            <img src="../searchPage/jobImage/job1.jpg" alt="job.jpg">
         </div>
-        <!-- Filter Buttons -->
-        <div id="buttons">
-            <button class="button-value" onclick="filterProduct('all')">All</button>
-            <button class="button-value" onclick="filterProduct('rating')">Rating</button>
-            <button class="button-value" onclick="filterProduct('salary')">Salary</button>
+        <div class="job-desc">
+            <label for="">Description</label>
         </div>
-        <!-- Jobs Available -->
-    </div>
-    <div id="products" onclick="navigateToJob()"></div>
+        <div class="job-desc">
+            <textarea readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </textarea>
+        </div>
+        <div class="job-label">
+            <label for="left-label">Location</label>
+            <label for="right-label">Salary</label>
+        </div>
+        <div class="job-block">
+            <textarea readonly class="left-textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+            <textarea readonly class="right-textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+        </div>
+        <button type="button" class="registerBtn"onclick="registerSuccess()">Register</button>
+     </div>
 </body>
 </html>

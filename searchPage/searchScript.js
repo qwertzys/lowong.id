@@ -26,14 +26,6 @@ let products = {
             salary: "Rp. 8,000,000 - Rp. 11,250,000 per Month",
             image: "../searchPage/jobImage/job2.jpg",
         },
-
-        {
-            jobName: "Marketing",
-            location: "Europe, Finland",
-            rating: "4.9",
-            salary: "Rp. 7,250,000 - 10,000,000 per Month",
-            image: "../searchPage/jobImage/job3.jpg",
-        },
     ],
 };
 
@@ -124,5 +116,5 @@ function navigateToJobs(){
 }
 
 document.getElementById("products").addEventListener("click", () => {
-    window.location.href = "../searchPage/jobPage/jobPage.html";
+    window.location.href = "../jobPage/jobPage.html";
 });
