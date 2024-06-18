@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    overflow-y: hidden;
+}
+
 body {
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
@@ -6,5 +11,53 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.wrapper {
+    width: 25%;
+    height: 250px;
+    background-color: rgba(1, 62, 1, 0.9);
+    border-radius: 20px;
+    color: white;
+    padding: 50px;
+    margin: 240px auto;
+    text-align: center;
+}
+
+#loginH1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    padding: 5px;
+    width: 210px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.register-link {
+    margin-bottom: 15px;
+}
+
+.register-link a {
+    color: white;
+}
+
+.btn {
+    width: 230px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgba(1, 62, 1, 0.9);
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(3, 177, 76);
 }
 
