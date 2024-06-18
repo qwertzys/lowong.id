@@ -159,12 +159,22 @@ button .button{
     height: 24px;
     fill: #007bff;
     position: relative;
-    right: 55vh;
-    bottom: 5px;
+    right: 53.5vh;
+    bottom: -13px;
 }
 
-#searchBtn:hover svg {
+/* #searchBtn:hover svg {
     fill: #0056b3;
+} */
+
+#search {
+    background-color: rgba(1, 62, 1, 0.9);
+    width: 100px;
+    margin-left: 5px;
+    color: white;
+    border-radius: 10%;
+    border: none;
+    box-shadow: 1px;
 }
 
 /* Filter */
@@ -195,8 +205,8 @@ button .button{
 }
 
 .card {
-    background-color: rgb(3, 177, 76);
-    max-width: 20em;
+    background-color: rgba(1, 62, 1, 0.9);
+    max-width: 15em;
     margin-top: 10em;
     /* padding: 5em; */
     border-radius: 5px;
